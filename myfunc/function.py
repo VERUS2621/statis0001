@@ -38,7 +38,7 @@ def histogram(data):
     plt.title('Histogram')
     plt.show()
 
-def pie_chart(data, labels):
+def pie(data, labels):
     """Create a pie chart."""
     plt.pie(data, labels=labels, autopct='%1.1f%%')
     plt.title('Pie Chart')
@@ -60,7 +60,7 @@ def scatter_plot(x, y):
     plt.title('Scatter Plot')
     plt.show()
 
-def bar_chart(categories, values):
+def bar(categories, values):
     """Create a bar chart."""
     plt.bar(categories, values)
     plt.xlabel('Categories')
