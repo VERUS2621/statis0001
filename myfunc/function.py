@@ -11,12 +11,61 @@ def mean(data):
     """Calculate the mean of a NumPy array or Pandas Series."""
     return np.mean(data)
 
+def mode(data):
+    """Calculate the mode of a NumPy array or Pandas Series."""
+    return stats.mode(data)[0][0]
+
+def median(data):
+    """Calculate the median of a NumPy array or Pandas Series."""
+    return np.median(data)
+
+def std_deviation(data):
+    """Calculate the standard deviation of a NumPy array or Pandas Series."""
+    return np.std(data)
+
+def variance(data):
+    """Calculate the variance of a NumPy array or Pandas Series."""
+    return np.var(data)
+
 def histogram(data):
-    """Plot a histogram of a NumPy array or Pandas Series."""
-    plt.hist(data, bins=10)
+    """
+    Plot a histogram of a NumPy array or Pandas Series.
+    Determine the bins based on the length of the data.
+    """
+    plt.hist(data, bins=int(1 + np.log2(len(data))))
     plt.xlabel('Value')
     plt.ylabel('Frequency')
     plt.title('Histogram')
+    plt.show()
+
+def pie_chart(data, labels):
+    """Create a pie chart."""
+    plt.pie(data, labels=labels, autopct='%1.1f%%')
+    plt.title('Pie Chart')
+    plt.show()
+
+def line_plot(x, y):
+    """Create a line plot of two sets of data."""
+    plt.plot(x, y)
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.title('Line Plot')
+    plt.show()
+
+def scatter_plot(x, y):
+    """Create a scatter plot of two sets of data."""
+    plt.scatter(x, y)
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.title('Scatter Plot')
+    plt.show()
+
+def bar_chart(categories, values):
+    """Create a bar chart."""
+    plt.bar(categories, values)
+    plt.xlabel('Categories')
+    plt.ylabel('Values')
+    plt.title('Bar Chart')
     plt.show()
 
 def t_test(data1, data2):
