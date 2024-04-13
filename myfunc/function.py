@@ -95,7 +95,7 @@ def standardize(data):
     """데이터 집합의 값을 표준화합니다."""
     return (data - np.mean(data)) / np.std(data)
 
-def box_plot(data, xlabel, ylabel, title):
+def box_plot(data, xlabel="", ylabel="", title=""):
     """데이터 집합의 상자 그림을 생성합니다."""
     plt.boxplot(data)
     plt.xlabel(xlabel)
