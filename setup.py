@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name = 'statstools',
+    name = 'spstats',
     version='0.0.2',
     description ='useful tool',
     author = 'kangmin',
