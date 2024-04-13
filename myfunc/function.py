@@ -6,7 +6,11 @@ from scipy import stats
 def randomarr(size):
     """지정된 크기의 랜덤한 NumPy 배열을 생성합니다."""
     return np.random.rand(size)
-
+    
+def array(data):
+    """ Numpy 배열 선언 """
+    return np.array(data)
+    
 def mean(data):
     """NumPy 배열 또는 Pandas Series의 평균을 계산합니다."""
     return np.mean(data)
@@ -27,6 +31,14 @@ def var(data):
     """NumPy 배열 또는 Pandas Series의 분산을 계산합니다."""
     return np.var(data)
 
+def skew(data):
+    """데이터의 왜도를 계산합니다."""
+    return skew(data)
+
+def kurtosis(data):
+    """데이터의 첨도를 계산합니다."""
+    return kurtosis(data)
+    
 def hist(data, xlabel, ylabel, title):
     """
     NumPy 배열 또는 Pandas Series의 히스토그램을 플로팅합니다.
@@ -67,6 +79,9 @@ def bar(categories, values, xlabel, ylabel, title):
     plt.ylabel(ylabel)
     plt.title(title)
     plt.show()
+    
+def savefig(filename):
+    plt.savefig(filename)
 
 def t_test(data1, data2):
     """scipy.stats를 사용하여 두 샘플에 대한 t-test을 수행합니다."""
