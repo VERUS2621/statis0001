@@ -9,7 +9,7 @@
 
 다운로드 : pip install spstats
 
-사용방법 : from myfunc import function as sp
+사용방법 : from spstats import spstats as sp
 
 
 저는 확률과 통계 수업에서 numpy, pandas, scipy, matplotlib.pyplot 모듈을 사용하는 것을 보고 4가지를 한 번에 합치면 편하겠다는 생각이 들어 합치게 되었습니다.
