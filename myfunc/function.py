@@ -39,7 +39,7 @@ def kurtosis(data):
     """데이터의 첨도를 계산합니다."""
     return kurtosis(data)
     
-def hist(data, xlabel, ylabel, title):
+def hist(data, xlabel="", ylabel="", title=""):
     """
     NumPy 배열 또는 Pandas Series의 히스토그램을 플로팅합니다.
     데이터의 길이를 기반으로 bin의 수를 결정합니다.
@@ -50,13 +50,13 @@ def hist(data, xlabel, ylabel, title):
     plt.title(title)
     plt.show()
 
-def pie(data, labels, title):
+def pie(data, labels, title=""):
     """파이 차트를 생성합니다."""
     plt.pie(data, labels=labels, autopct='%1.1f%%')
     plt.title(title)
     plt.show()
 
-def line_plot(x, y, xlabel, ylabel, title):
+def line_plot(x, y, xlabel="", ylabel="", title=""):
     """두 데이터 집합의 선 그래프를 생성합니다."""
     plt.plot(x, y)
     plt.xlabel(xlabel)
@@ -64,7 +64,7 @@ def line_plot(x, y, xlabel, ylabel, title):
     plt.title(title)
     plt.show()
 
-def scatter_plot(x, y, xlabel, ylabel, title):
+def scatter_plot(x, y, xlabel="", ylabel="", title=""):
     """두 데이터 집합의 산점도를 생성합니다."""
     plt.scatter(x, y)
     plt.xlabel(xlabel)
@@ -72,7 +72,7 @@ def scatter_plot(x, y, xlabel, ylabel, title):
     plt.title(title)
     plt.show()
 
-def bar(categories, values, xlabel, ylabel, title):
+def bar(categories, values, xlabel="", ylabel="", title=""):
     """막대 그래프를 생성합니다."""
     plt.bar(categories, values)
     plt.xlabel(xlabel)
