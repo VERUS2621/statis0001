@@ -3,11 +3,14 @@
 과제 제출용
 동아대학교 2342709 김강민
 
-https://pypi.org/project/spstats/
 패키지 링크 : https://pypi.org/project/spstats/
+
 깃허브 레퍼지토리 : https://github.com/VERUS2621/statis0001
+
 다운로드 : pip install spstats
+
 사용방법 : from myfunc import function as sp
+
 
 저는 확률과 통계 수업에서 numpy, pandas, scipy, matplotlib.pyplot 모듈을 사용하는 것을 보고 4가지를 한 번에 합치면 편하겠다는 생각이 들어 합치게 되었습니다.
 밑에 작성되지 않은 함수는 sp.np ~, sp.pd ~ 등으로 사용하면 되겠습니다.
