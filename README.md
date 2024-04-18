@@ -37,7 +37,7 @@ print(data)
     - NumPy 배열 또는 Pandas Series의 평균을 계산합니다.
 
 4. `mode(data):`
-    - NumPy 배열 또는 Pandas Series의 최빈값을 계산합니다.
+    - NumPy 배열 또는 Pandas Series의 최빈값을 계산합니다. // 인덱스 오류가 있어 현재는 수정하였으나 지금 작동하지 않음
 
 5. `med(data):`
     - NumPy 배열 또는 Pandas Series의 중앙값을 계산합니다.
