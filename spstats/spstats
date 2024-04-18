@@ -17,7 +17,7 @@ def mean(data):
 
 def mode(data):
     """NumPy 배열 또는 Pandas Series의 최빈값을 계산합니다."""
-    return stats.mode(data)[0][0]
+    return stats.mode(data)[0] // 인덱스 오류가 있어 수정함
 
 def med(data):
     """NumPy 배열 또는 Pandas Series의 중앙값을 계산합니다."""
