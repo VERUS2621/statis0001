@@ -17,6 +17,16 @@
 
 이`spstats` 라이브러리의 각 함수를 간단히 설명하여 정리해 보겠습니다.
 
+from spstats import spstats as sp
+
+data = sp.array([1,2,3])
+print(len(data))
+print(data)
+
+3
+[1 2 3]
+
+
 1. `randomarr(size):`
     - 지정된 크기의 랜덤한 NumPy 배열을 생성합니다.
 
