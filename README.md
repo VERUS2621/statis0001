@@ -19,12 +19,18 @@
 
 from spstats import spstats as sp
 
-data = sp.array([1,2,3])
+data = sp.array([1,2,3,4,5,5,5,5,6,6,7,8,8])
 print(len(data))
-print(data)
+print(sp.mean(data))
+print(sp.med(data))
+print(sp.std(data))
+print(sp.var(data))
 
-3
-[1 2 3]
+13 
+5.0
+5.0
+2.0380986614602725
+4.153846153846154
 
 
 1. `randomarr(size):`
